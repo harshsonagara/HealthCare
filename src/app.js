@@ -2,7 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 
 // Middleware Imports
-const logger = require('./middleware/logger.middleware');
+const { requestLogger, morganLogger} = require('./middleware/logger.middleware');
 const { authenticate } = require('./middleware/auth.middleware');
 const securityMiddleware = require('./middleware/security.middleware'); 
 
@@ -25,7 +25,8 @@ securityMiddleware(app); // Apply security middleware globally
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(logger.requestLogger);
+app.use(morganLogger);     // For HTTP detailed logs
+app.use(requestLogger);    // Optional: Basic log like "GET /something"
 
 
 // ======================

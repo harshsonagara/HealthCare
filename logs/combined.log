@@ -1,0 +1,74 @@
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:41:52.084Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:43:47.010Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:43:48.412Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:43:53.226Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:44:19.788Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:44:22.374Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:44:41.717Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:44:43.884Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:42.591Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:44.564Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:51:45.176Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:46.554Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:48.568Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:51.626Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:53.622Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:51:55.357Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:51:57.312Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:03.184Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:05.405Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:06.425Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:08.265Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:10.472Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:14.404Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:28.547Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:31.001Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:32.563Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:34.199Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:36.420Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:38.066Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:40.139Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:42.199Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:42.637Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:44.714Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:45.159Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:46.914Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:47.380Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:50.495Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:56.169Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:57.279Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:52:59.129Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:52:59.575Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:01.252Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:03.516Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:05.737Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:07.332Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:53:07.767Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:09.282Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:11.177Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:13.039Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:15.012Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:53:15.443Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:18.642Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:20.977Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:23.427Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T14:53:24.852Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T14:53:26.661Z"}
+{"level":"info","message":"POST /api/appointments","timestamp":"2025-08-07T15:04:05.125Z"}
+{"level":"http","message":"::1 POST /api/appointments 201 235 - 126.559 ms","timestamp":"2025-08-07T15:04:05.258Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:07:17.294Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:07:17.778Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:08:59.073Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:09:00.723Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:09:02.611Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:09:04.669Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:09:06.618Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:09:08.030Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:09:44.560Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:09:48.158Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:14:35.232Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:14:35.793Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:15:02.346Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:15:04.294Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-08-07T15:18:24.419Z"}
+{"level":"info","message":"MongoDB Connected","timestamp":"2025-08-07T15:18:26.994Z"}
