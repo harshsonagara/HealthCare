@@ -1,14 +1,10 @@
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const path = require('path');
 
 // Middleware Imports
-const helmet = require('helmet');
-const cors = require('cors');
-const rateLimit = require('express-rate-limit');
 const logger = require('./middleware/logger.middleware');
 const { authenticate } = require('./middleware/auth.middleware');
-const securityMiddleware = require('./middleware/security.middleware'); // Import security middleware
+const securityMiddleware = require('./middleware/security.middleware'); 
 
 // Route Imports
 const authRoutes = require('./routes/auth.routes');
