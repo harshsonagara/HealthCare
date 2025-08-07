@@ -31,8 +31,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(logger.requestLogger);
 
-// Serve static files (if needed)
-app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ======================
 // ROUTES
@@ -46,8 +44,8 @@ app.use('/api/chat', authenticate, chatRoutes);
 // ERROR HANDLING
 // ======================
 // 404 Handler
-app.use((req, res) => {
-  res.status(404).json({ success: false, message: 'Resource not found' });
+app.use((req, res, next) => {
+    res.status(404).json({ success: false, message: 'Resource not found' });
 });
 
 // Final error handler

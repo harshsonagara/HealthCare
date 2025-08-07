@@ -1,3 +1,4 @@
+
 const winston = require('winston');
 
 const logger = winston.createLogger({
@@ -9,4 +10,12 @@ const logger = winston.createLogger({
   ]
 });
 
-module.exports = logger;
+const requestLogger = (req, res, next) => {
+  logger.info(`${req.method} ${req.url}`);
+  next();
+};
+
+module.exports = {
+  logger,
+  requestLogger
+};
