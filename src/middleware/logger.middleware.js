@@ -51,10 +51,10 @@ const logger = winston.createLogger({
       level: 'error',
       format: fileFormat,
     }),
-    new winston.transports.File({
-      filename: path.join(logDir, 'combined.log'),
-      format: fileFormat,
-    }),
+    // new winston.transports.File({
+    //   filename: path.join(logDir, 'combined.log'),
+    //   format: fileFormat,
+    // }),
   ],
   exceptionHandlers: [
     new winston.transports.File({ filename: path.join(logDir, 'exceptions.log') }),
