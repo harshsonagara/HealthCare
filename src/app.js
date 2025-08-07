@@ -1,4 +1,3 @@
-
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const path = require('path');
@@ -9,6 +8,7 @@ const cors = require('cors');
 const rateLimit = require('express-rate-limit');
 const logger = require('./middleware/logger.middleware');
 const { authenticate } = require('./middleware/auth.middleware');
+const securityMiddleware = require('./middleware/security.middleware'); // Import security middleware
 
 // Route Imports
 const authRoutes = require('./routes/auth.routes');
@@ -21,18 +21,7 @@ const app = express();
 // ======================
 // SECURITY MIDDLEWARE
 // ======================
-app.use(helmet());
-app.use(cors({
-  origin: process.env.FRONTEND_URL,
-  credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE']
-}));
-
-app.use(rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100, // Limit each IP
-  message: 'Too many requests from this IP'
-}));
+securityMiddleware(app); // Apply security middleware globally
 
 // ======================
 // CORE MIDDLEWARE

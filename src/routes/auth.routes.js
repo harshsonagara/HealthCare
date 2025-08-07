@@ -1,7 +1,8 @@
+
 const express = require('express');
 const router = express.Router();
 const { validateRegister } = require('../middleware/validators.middleware');
-const { register, login } = require('../controllers/auth.controller');
+const { register, login, getUserProfile } = require('../controllers/auth.controller'); // Ensure getUser Profile is defined
 
 // Public routes (no auth middleware)
 router.post('/register', validateRegister, register); 
