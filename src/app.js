@@ -1,0 +1,67 @@
+
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const path = require('path');
+
+// Middleware Imports
+const helmet = require('helmet');
+const cors = require('cors');
+const rateLimit = require('express-rate-limit');
+const logger = require('./middleware/logger.middleware');
+const { authenticate } = require('./middleware/auth.middleware');
+
+// Route Imports
+const authRoutes = require('./routes/auth.routes');
+const appointmentRoutes = require('./routes/appointment.routes');
+const adminRoutes = require('./routes/admin.routes');
+const chatRoutes = require('./routes/chat.routes');
+
+const app = express();
+
+// ======================
+// SECURITY MIDDLEWARE
+// ======================
+app.use(helmet());
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
+
+app.use(rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP
+  message: 'Too many requests from this IP'
+}));
+
+// ======================
+// CORE MIDDLEWARE
+// ======================
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+app.use(cookieParser());
+app.use(logger.requestLogger);
+
+// Serve static files (if needed)
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+
+// ======================
+// ROUTES
+// ======================
+app.use('/api/auth', authRoutes);
+app.use('/api/appointments', authenticate, appointmentRoutes);
+app.use('/api/admin', authenticate, adminRoutes);
+app.use('/api/chat', authenticate, chatRoutes);
+
+// ======================
+// ERROR HANDLING
+// ======================
+// 404 Handler
+app.use((req, res) => {
+  res.status(404).json({ success: false, message: 'Resource not found' });
+});
+
+// Final error handler
+app.use(require('./middleware/error.middleware'));
+
+module.exports = app;
